@@ -1,0 +1,45 @@
+Assessment 1 on PostgreSQL Database -45 Marks -24th
+ Feb 2023 
+ 
+I. Consider the standard Emp and Dept tables to write the following queries.
+1. Write the commands to apply foreign key on MGR column referring empno on the same table.
+And add On Delete cascade option. 4Marks 
+a. Write this with Create table Column Level
+b. Write this with Alter table Table Level
+2. Write a query to list all the employees who are earning more than at least any one employee in
+20th Department. Exclude the employees who are working as CLERKs. 3M
+3. Write a query to list the departments that are having their average salary more than 30th dept 
+avg salary. Exclude the departments that are having less than 2 employees. 4M
+4. Write a select statement to list all the duplicated records. 3M
+5. Write a query to list the departments that are having at least 2 clerks with a minimum of 10,000 
+salary. Exclude clerks who have joined in 2020. 3M
+II. Write a query to list all accounts with these fields of information (accno, op_date, 
+currentbalance, last trans date, last trans amount). Use the standard Accounts and 
+Transaction tables given below. Don’t assume your own columns to write the query. 4 M
+Table : Accounts table (accno,name,op_date,currentbalance)
+Table : Transactions table (accno,tr_date,tr_type,amount)
+III. Consider the below product tables
+Table : HSNCodes (hsncode ,gst) : This table stores hsn code wise GST percentage.
+Table : Products (prod_id,name,description,hsncode,category) : This table stores all products info.
+Table : ProductStock (prod_id,batchno,qty,unitprice,expdate) : This table stores the product stock.
+Table : LocationWiseShippingCharges (state, charge) : This table stores state wise shipping charges. 
+Irrespective of no of products ordered, shipping charges are considered as fixed).
+Table : Orders (order_id,order_date,customer_name,state,total) : This table stores all the Orders 
+made by customer.
+Table : OrderProducts (order_id,prod_id,batchno,qty,gst) : This table stores all the products 
+ordered as part of an order. This is a child table of Orders.
+1. Write a query to list the products (prod_id, name, batchno, qty, unitprice, expdate,gsttax). 
+Exclude the products that are expired already. And also exclude the products that are having gst 
+more than 25% 4 Marks
+www.nkxgen.com Corporate Training enquiry@nkxgen.com
+2. Write a query to list the orders (order_id, customer_name, order_date, total) that are having at 
+least 5 products in their order. 4 Marks
+3. Write a query to list the products (prod_id, name, gst, average gst percentage value of all
+products). Exclude the product categories of ‘Electronics’ and ‘Mobile’. 4 Marks
+4. Write a query to list the Orders (order_id,order_date, customer_name, total, highest order total 
+on that day) 4 M
+IV. Answer all the following Questions. 
+1. Explain the importance of Atomicity of a transaction with a real time example. Explain the 
+concept behind commit and rollback of transaction with DML statements like insert, update & 
+Delete. 4 Marks
+2. Explain the isolation level with flow of steps and syntaxes.
